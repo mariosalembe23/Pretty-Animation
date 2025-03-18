@@ -32,6 +32,17 @@ button {
   transform: translate(200%, -50%);
 }
 
+.topPanel {
+  top: 0;
+  opacity: 0;
+  transform: translate(-50%, -200%);
+}
+
+.bottomPanel {
+  opacity: 0;
+  transform: translate(-50%, 200%);
+}
+
 .leftPanelActive {
   animation: AnimationLeftOn 0.5s 0.2s ease-in-out forwards !important;
 }
@@ -48,6 +59,24 @@ button {
 .rightPanelInactive {
   transform: translate(-200%, -50%);
   animation: AnimationRightOff 0.5s ease-in-out forwards !important;
+}
+
+.topPanelActive {
+  animation: AnimationTopOn 0.5s 0.2s ease-in-out forwards !important;
+}
+
+.topPanelInactive {
+  transform: translate(-50%, -200%);
+  animation: AnimationTopOff 0.5s ease-in-out forwards !important;
+}
+
+.bottomPanelActive {
+  animation: AnimationBottomOn 0.5s 0.2s ease-in-out forwards !important;
+}
+
+.bottomPanelInactive {
+  transform: translate(-50%, 200%);
+  animation: AnimationBottomOff 0.5s ease-in-out forwards !important;
 }
 
 .backScreen {
@@ -126,5 +155,53 @@ button {
   to {
     opacity: 0;
     transform: translate(200%, -50%);
+  }
+}
+
+@keyframes AnimationTopOn {
+  from {
+    opacity: 0;
+    top: 0;
+    transform: translate(-50%, -200%);
+  }
+  to {
+    opacity: 1;
+    top: 8rem;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes AnimationTopOff {
+  from {
+    opacity: 1;
+    top: 8rem;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    opacity: 0;
+    top: 0rem;
+    transform: translate(-50%, -200%);
+  }
+}
+
+@keyframes AnimationBottomOn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 200%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes AnimationBottomOff {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%, 200%);
   }
 }
