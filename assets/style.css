@@ -21,3 +21,110 @@ body {
 button {
   cursor: pointer;
 }
+
+.leftPanel {
+  opacity: 0;
+  transform: translate(-200%, -50%);
+}
+
+.rightPanel {
+  opacity: 0;
+  transform: translate(200%, -50%);
+}
+
+.leftPanelActive {
+  animation: AnimationLeftOn 0.5s 0.2s ease-in-out forwards !important;
+}
+
+.leftPanelInactive {
+  transform: translate(-200%, -50%);
+  animation: AnimationLeftOff 0.5s ease-in-out forwards !important;
+}
+
+.rightPanelActive {
+  animation: AnimationRightOn 0.5s 0.2s ease-in-out forwards !important;
+}
+
+.rightPanelInactive {
+  transform: translate(-200%, -50%);
+  animation: AnimationRightOff 0.5s ease-in-out forwards !important;
+}
+
+.backScreen {
+  opacity: 0;
+  display: none;
+}
+
+.backScreenActive {
+  display: block;
+  opacity: 0;
+  animation: backScreenAnimationOn 0.7s 0.1s ease-in-out forwards;
+}
+
+.backScreenInactive {
+  display: block;
+  opacity: 1;
+  animation: backScreenAnimationOff 0.7s 0.1s ease-in-out forwards;
+}
+
+@keyframes backScreenAnimationOn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes backScreenAnimationOff {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes AnimationLeftOn {
+  from {
+    opacity: 0;
+    transform: translate(-200%, -50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes AnimationLeftOff {
+  from {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-200%, -50%);
+  }
+}
+
+@keyframes AnimationRightOn {
+  from {
+    opacity: 0;
+    transform: translate(200%, -50%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0%, -50%);
+  }
+}
+
+@keyframes AnimationRightOff {
+  from {
+    opacity: 1;
+    transform: translate(0%, -50%);
+  }
+  to {
+    opacity: 0;
+    transform: translate(200%, -50%);
+  }
+}

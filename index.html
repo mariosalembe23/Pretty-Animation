@@ -14,6 +14,53 @@
   </head>
   <body>
     <main class="h-screen flex items-center justify-center w-full">
+      <aside
+        class="fixed backScreen top-0 left-0 right-0 bg-[rgba(0,0,0,0.4)] w-full z-30 backdrop-blur-md h-screen"
+      >
+        <div
+          class="leftPanel fixed top-1/2 left-52 max-w-80 w-full p-5 rounded-md bg-white shadow-lg"
+        >
+          <header
+            class="flex items-center border-b border-zinc-200 pb-2 justify-between"
+          >
+            <h2 class="font-medium text-zinc-800">Left Panel</h2>
+            <button
+              onclick="MakeGeneralEffect('leftPanelActive', 'leftPanelInactive', 'leftPanel', 'inactive')"
+              class="text-[13px] bg-zinc-200 transition-all hover:bg-violet-500 hover:text-white text-zinc-600 px-3 py-1 rounded-full font-medium"
+            >
+              Close
+            </button>
+          </header>
+          <footer class="pt-2">
+            <p class="interFont text-zinc-600">
+              This dashboard was created with Tailwind CSS and simple
+              animations.
+            </p>
+          </footer>
+        </div>
+        <div
+          class="rightPanel fixed top-1/2 right-16 max-w-80 w-full p-5 rounded-md bg-white shadow-lg"
+        >
+          <header
+            class="flex items-center border-b border-zinc-200 pb-2 justify-between"
+          >
+            <h2 class="font-medium text-zinc-800">Left Panel</h2>
+            <button
+              onclick="MakeGeneralEffect('rightPanelActive', 'rightPanelInactive', 'rightPanel', 'inactive')"
+              class="text-[13px] bg-zinc-200 transition-all hover:bg-violet-500 hover:text-white text-zinc-600 px-3 py-1 rounded-full font-medium"
+            >
+              Close
+            </button>
+          </header>
+          <footer class="pt-2">
+            <p class="interFont text-zinc-600">
+              This dashboard was created with Tailwind CSS and simple
+              animations.
+            </p>
+          </footer>
+        </div>
+      </aside>
+
       <header>
         <div
           class="navbar fixed top-0 left-0 right-0 flex items-center justify-center"
@@ -116,6 +163,7 @@
       >
         <div class="h-32 flex items-center justify-center">
           <button
+            onclick="MakeGeneralEffect('leftPanelActive', 'leftPanelInactive', 'leftPanel', 'active')"
             title="Left Panel"
             class="w-9 h-9 bg-violet-500 transition-all hover:text-white hover:bg-violet-600 hover:border-violet-600 hover:ring-4 hover:ring-violet-400 hover:ring-opacity-35 text-white rounded-md flex items-center justify-center"
           >
@@ -174,6 +222,7 @@
         </div>
         <div class="h-32 flex items-center justify-center">
           <button
+            onclick="MakeGeneralEffect('rightPanelActive', 'rightPanelInactive', 'rightPanel', 'active')"
             title="Right Panel"
             class="w-9 h-9 rotate-180 bg-violet-500 transition-all hover:text-white hover:bg-violet-600 hover:border-violet-600 hover:ring-4 hover:ring-violet-400 hover:ring-opacity-35 text-white rounded-md flex items-center justify-center"
           >
@@ -194,5 +243,6 @@
         </div>
       </section>
     </main>
+    <script src="assets/script.js"></script>
   </body>
 </html>
