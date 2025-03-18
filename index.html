@@ -14,93 +14,95 @@
     <title>Common Animations</title>
   </head>
   <body class="bg-[#242424]">
-    <main class="h-screen flex items-center justify-center w-full">
+    <main class="h-screen flex items-center justify-center w-screen">
       <aside
-        class="fixed backScreen top-0 left-0 right-0 bg-[rgba(0,0,0,0.4)] w-screen z-30 backdrop-blur-md h-screen"
+        class="fixed backScreen top-0 left-0 right-0 bg-[rgba(0,0,0,0.4)] w-full z-30 backdrop-blur-md h-screen"
       >
-        <div
-          class="leftPanel fixed top-1/2 left-52 max-w-80 w-full p-5 rounded-md bg-zinc-800 shadow-lg"
-        >
-          <header
-            class="flex items-center border-b border-zinc-700 pb-2 justify-between"
+        <div class="w-full h-full allCards relative">
+          <div
+            class="leftPanel rightLeft mx-4 fixed top-1/2 p-5 rounded-md bg-zinc-800 shadow-lg"
           >
-            <h2 class="font-medium text-zinc-200">Left Panel</h2>
-            <button
-              onclick="MakeGeneralEffect('leftPanelActive', 'leftPanelInactive', 'leftPanel', 'inactive')"
-              class="text-[13px] bg-zinc-900 transition-all hover:bg-violet-500 hover:text-white text-zinc-100 px-3 py-1 rounded-full font-medium"
+            <header
+              class="flex items-center border-b border-zinc-700 pb-2 justify-between"
             >
-              Close
-            </button>
-          </header>
-          <footer class="pt-2">
-            <p class="interFont text-zinc-200">
-              This dashboard was created with Tailwind CSS and simple
-              animations.
-            </p>
-          </footer>
-        </div>
-        <div
-          class="rightPanel fixed top-1/2 right-16 max-w-80 w-full p-5 rounded-md bg-zinc-800 shadow-lg"
-        >
-          <header
-            class="flex items-center border-b border-zinc-700 pb-2 justify-between"
+              <h2 class="font-medium text-zinc-200">Left Panel</h2>
+              <button
+                onclick="MakeGeneralEffect('leftPanelActive', 'leftPanelInactive', 'leftPanel', 'inactive')"
+                class="text-[13px] bg-zinc-900 transition-all hover:bg-violet-500 hover:text-white text-zinc-100 px-3 py-1 rounded-full font-medium"
+              >
+                Close
+              </button>
+            </header>
+            <footer class="pt-2">
+              <p class="interFont text-zinc-200">
+                This dashboard was created with Tailwind CSS and simple
+                animations.
+              </p>
+            </footer>
+          </div>
+          <div
+            class="rightPanel rightLeft mx-4 fixed top-1/2 right-0 p-5 rounded-md bg-zinc-800 shadow-lg"
           >
-            <h2 class="font-medium text-zinc-200">Right Panel</h2>
-            <button
-              onclick="MakeGeneralEffect('rightPanelActive', 'rightPanelInactive', 'rightPanel', 'inactive')"
-              class="text-[13px] bg-zinc-900 transition-all hover:bg-violet-500 hover:text-white text-zinc-100 px-3 py-1 rounded-full font-medium"
+            <header
+              class="flex items-center border-b border-zinc-700 pb-2 justify-between"
             >
-              Close
-            </button>
-          </header>
-          <footer class="pt-2">
-            <p class="interFont text-zinc-200">
-              This dashboard was created with Tailwind CSS and simple
-              animations.
-            </p>
-          </footer>
-        </div>
-        <div
-          class="topPanel fixed top-32 left-1/2 right-0 max-w-80 w-full p-5 rounded-md bg-zinc-800 shadow-lg"
-        >
-          <header
-            class="flex items-center border-b border-zinc-700 pb-2 justify-between"
+              <h2 class="font-medium text-zinc-200">Right Panel</h2>
+              <button
+                onclick="MakeGeneralEffect('rightPanelActive', 'rightPanelInactive', 'rightPanel', 'inactive')"
+                class="text-[13px] bg-zinc-900 transition-all hover:bg-violet-500 hover:text-white text-zinc-100 px-3 py-1 rounded-full font-medium"
+              >
+                Close
+              </button>
+            </header>
+            <footer class="pt-2">
+              <p class="interFont text-zinc-200">
+                This dashboard was created with Tailwind CSS and simple
+                animations.
+              </p>
+            </footer>
+          </div>
+          <div
+            class="topPanel topBottom fixed top-32 left-1/2 right-0 p-5 rounded-md bg-zinc-800 shadow-lg"
           >
-            <h2 class="font-medium text-zinc-200">Top Panel</h2>
-            <button
-              onclick="MakeGeneralEffect('topPanelActive', 'topPanelInactive', 'topPanel', 'inactive')"
-              class="text-[13px] bg-zinc-900 transition-all hover:bg-violet-500 hover:text-white text-zinc-100 px-3 py-1 rounded-full font-medium"
+            <header
+              class="flex items-center border-b border-zinc-700 pb-2 justify-between"
             >
-              Close
-            </button>
-          </header>
-          <footer class="pt-2">
-            <p class="interFont text-zinc-200">
-              This dashboard was created with Tailwind CSS and simple
-              animations.
-            </p>
-          </footer>
-        </div>
-        <div
-          class="bottomPanel fixed bottom-0 left-1/2 right-0 max-w-80 w-full p-5 rounded-md bg-zinc-800 shadow-lg"
-        >
-          <header
-            class="flex items-center border-b border-zinc-700 pb-2 justify-between"
+              <h2 class="font-medium text-zinc-200">Top Panel</h2>
+              <button
+                onclick="MakeGeneralEffect('topPanelActive', 'topPanelInactive', 'topPanel', 'inactive')"
+                class="text-[13px] bg-zinc-900 transition-all hover:bg-violet-500 hover:text-white text-zinc-100 px-3 py-1 rounded-full font-medium"
+              >
+                Close
+              </button>
+            </header>
+            <footer class="pt-2">
+              <p class="interFont text-zinc-200">
+                This dashboard was created with Tailwind CSS and simple
+                animations.
+              </p>
+            </footer>
+          </div>
+          <div
+            class="bottomPanel topBottom fixed bottom-0 left-1/2 right-0 p-5 rounded-md bg-zinc-800 shadow-lg"
           >
-            <h2 class="font-medium text-zinc-200">Bottom Panel</h2>
-            <button
-              onclick="MakeGeneralEffect('bottomPanelActive', 'bottomPanelInactive', 'bottomPanel', 'inactive')"
-              class="text-[13px] bg-zinc-900 transition-all hover:bg-violet-500 hover:text-white text-zinc-100 px-3 py-1 rounded-full font-medium"
+            <header
+              class="flex items-center border-b border-zinc-700 pb-2 justify-between"
             >
-              Close
-            </button>
-          </header>
-          <footer class="pt-2">
-            <p class="interFont text-zinc-200">
-              This dashboard was created with Tailwind CSS and simple
-              animations.
-            </p>
-          </footer>
+              <h2 class="font-medium text-zinc-200">Bottom Panel</h2>
+              <button
+                onclick="MakeGeneralEffect('bottomPanelActive', 'bottomPanelInactive', 'bottomPanel', 'inactive')"
+                class="text-[13px] bg-zinc-900 transition-all hover:bg-violet-500 hover:text-white text-zinc-100 px-3 py-1 rounded-full font-medium"
+              >
+                Close
+              </button>
+            </header>
+            <footer class="pt-2">
+              <p class="interFont text-zinc-200">
+                This dashboard was created with Tailwind CSS and simple
+                animations.
+              </p>
+            </footer>
+          </div>
         </div>
       </aside>
 

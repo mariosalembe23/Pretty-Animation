@@ -27,6 +27,16 @@ button {
   transform: translate(-200%, -50%);
 }
 
+.allCards div {
+  width: 20rem;
+}
+
+@media screen and (max-width: 900px) {
+  .allCards div {
+    width: 90%;
+  }
+}
+
 .rightPanel {
   opacity: 0;
   transform: translate(200%, -50%);
@@ -121,14 +131,14 @@ button {
   }
   to {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
   }
 }
 
 @keyframes AnimationLeftOff {
   from {
     opacity: 1;
-    transform: translate(-50%, -50%);
+    transform: translate(0%, -50%);
   }
   to {
     opacity: 0;
