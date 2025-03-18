@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/style.css" />
+
+    <title>Common Animations</title>
+  </head>
+  <body>
+    <main class="h-screen flex items-center justify-center w-full">
+      <header>
+        <div
+          class="navbar fixed top-0 left-0 right-0 flex items-center justify-center"
+        >
+          <div class="iconsArea flex py-5 items-center justify-center gap-5">
+            <button
+              title="Github"
+              class="w-9 h-9 bg-gray-100 transition-all border border-zinc-200 hover:text-white hover:bg-violet-600 hover:border-violet-600 hover:ring-4 hover:ring-violet-400 hover:ring-opacity-35 text-zinc-500 rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-git-branch size-5"
+              >
+                <line x1="6" x2="6" y1="3" y2="15" />
+                <circle cx="18" cy="6" r="3" />
+                <circle cx="6" cy="18" r="3" />
+                <path d="M18 9a9 9 0 0 1-9 9" />
+              </svg>
+            </button>
+            <button
+              title="Mudar Tema"
+              class="w-9 h-9 bg-gray-100 transition-all border border-zinc-200 hover:text-white hover:bg-violet-600 hover:border-violet-600 hover:ring-4 hover:ring-violet-400 hover:ring-opacity-35 text-zinc-500 rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-sun size-5"
+              >
+                <circle cx="12" cy="12" r="4" />
+                <path d="M12 2v2" />
+                <path d="M12 20v2" />
+                <path d="m4.93 4.93 1.41 1.41" />
+                <path d="m17.66 17.66 1.41 1.41" />
+                <path d="M2 12h2" />
+                <path d="M20 12h2" />
+                <path d="m6.34 17.66-1.41 1.41" />
+                <path d="m19.07 4.93-1.41 1.41" />
+              </svg>
+            </button>
+            <button
+              onclick="window.location.href = 'https://dribbble.com/mariosalembe_'"
+              title="Dribbble"
+              class="w-9 h-9 bg-gray-100 transition-all border border-zinc-200 hover:text-white hover:bg-violet-600 hover:border-violet-600 hover:ring-4 hover:ring-violet-400 hover:ring-opacity-35 text-zinc-500 rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-dribbble size-5"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M19.13 5.09C15.22 9.14 10 10.44 2.25 10.94" />
+                <path d="M21.75 12.84c-6.62-1.41-12.14 1-16.38 6.32" />
+                <path d="M8.56 2.75c4.37 6 6 9.42 8 17.72" />
+              </svg>
+            </button>
+            <button
+              onclick="window.location.href = 'https://dribbble.com/mariosalembe_'"
+              title="Linkedin"
+              class="w-9 h-9 bg-gray-100 transition-all border border-zinc-200 hover:text-white hover:bg-violet-600 hover:border-violet-600 hover:ring-4 hover:ring-violet-400 hover:ring-opacity-35 text-zinc-500 rounded-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-linkedin size-5"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+    </main>
+  </body>
+</html>
